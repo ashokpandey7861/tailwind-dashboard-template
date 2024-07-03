@@ -93,8 +93,8 @@ function DashboardCard03() {
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">FinNifty</h2>
 
         <div className="flex items-start">
-          <div className="text-xl font-bold text-slate-800 dark:text-slate-100 mr-2">$9,962</div>
-          <div className="text-xs font-semibold text-white px-1.5 bg-emerald-500 rounded-full">+49%</div> 
+          <div className="text-xl font-bold text-slate-800 dark:text-slate-100 mr-2">24222</div>
+          <div className="text-xs font-semibold text-white px-1.5 bg-emerald-500 rounded-full">+2.3%</div> 
         </div>
       </div>
       {/* Chart built with Chart.js 3 */}
