@@ -42,11 +42,7 @@ function Dashboard() {
 
             
 
-            {/* Dashboard actions */}
            
-
-            </div>
-
             {/* Cards */}
             <div className="grid grid-cols-12 gap-6 pb-6">
                 
