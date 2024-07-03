@@ -65,7 +65,7 @@ function Dashboard() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-12 gap-6 pt-5">
+            <div className="grid grid-cols-12 gap-6 pb-6">
                 
               {/* Line chart (Acme Plus) */}
               <DashboardCard01 />
