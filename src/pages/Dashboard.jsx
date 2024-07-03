@@ -65,9 +65,15 @@ function Dashboard() {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-12 gap-6">
+            <div className="grid grid-cols-12 gap-6 pt-5">
                 
               {/* Line chart (Acme Plus) */}
+              <DashboardCard01 />
+              {/* Line chart (Acme Advanced) */}
+              <DashboardCard02 />
+              {/* Line chart (Acme Professional) */}
+              <DashboardCard03 />
+               {/* Line chart (Acme Plus) */}
               <DashboardCard01 />
               {/* Line chart (Acme Advanced) */}
               <DashboardCard02 />
