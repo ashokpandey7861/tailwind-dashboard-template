@@ -1,35 +1,39 @@
 import React, { useEffect } from 'react';
-import {
-  Routes,
-  Route,
-  useLocation
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import './css/style.css';
-
 import './charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Dashboard1 from './pages/Dashboard1';
-function App() {
+import NotFound from './pages/NotFound';
 
+function App() {
   const location = useLocation();
 
   useEffect(() => {
-    document.querySelector('html').style.scrollBehavior = 'auto'
-    window.scroll({ top: 0 })
-    document.querySelector('html').style.scrollBehavior = ''
-  }, [location.pathname]); // triggered on route change
+    console.log('Current path:', location.pathname);
+    document.querySelector('html').style.scrollBehavior = 'auto';
+    window.scroll({ top: 0 });
+    document.querySelector('html').style.scrollBehavior = '';
+  }, [location.pathname]);
 
   return (
     <>
       <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/dashboard.html" element={<Dashboard1 />} />
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/dashboard.html" element={<Dashboard1 />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
 }
 
-export default App;
+export default function Root() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
