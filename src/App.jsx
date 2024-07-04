@@ -7,7 +7,7 @@ import './charts/ChartjsConfig';
 // Import pages
 import Dashboard from './pages/Dashboard';
 import Dashboard1 from './pages/Dashboard1';
-import NotFound from './pages/NotFound';
+
 
 function App() {
   const location = useLocation();
@@ -24,7 +24,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/dashboard.html" element={<Dashboard1 />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
