@@ -12,7 +12,7 @@ import './charts/ChartjsConfig';
 
 // Import pages
 import Dashboard from './pages/Dashboard';
-import Dashboard from './pages/Dashboard1';
+import Dashboard1 from './pages/Dashboard1';
 
 function App() {
 
