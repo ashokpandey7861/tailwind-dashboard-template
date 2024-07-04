@@ -26,7 +26,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/dashboard.html" element={<Dashboard2 />} />
+        <Route exact path="/dashboard.html" element={<Dashboard1 />} />
       </Routes>
     </>
   );
