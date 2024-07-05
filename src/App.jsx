@@ -25,14 +25,14 @@ function App() {
   }, [location.pathname]); // triggered on route change
 
   return (
-    <>
+    
       <Router>
         <Routes>
           <Route exact path="/" element={<Dashboard />} />
           <Route exact path="/dash" element={<Dashboard1 />} />
         </Routes>
-        <Router/>
-    </>
+      </Router>
+    
   );
 }
 
