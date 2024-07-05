@@ -26,10 +26,12 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route exact path="/" element={<Dashboard />} />
-        <Route exact path="/dash" element={<Dashboard1 />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/dash" element={<Dashboard1 />} />
+        </Routes>
+        <Router/>
     </>
   );
 }
