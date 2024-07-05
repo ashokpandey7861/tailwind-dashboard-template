@@ -20,12 +20,10 @@ function App() {
 
   return (
     
-      <Router>
         <Routes>
-          <Route exact path="/" element={<Dashboard />} />
-          <Route path="/dash" element={<Dashboard1 />} />
-        </Routes>
-      </Router>
+      <Route exact path="/" element={<Dashboard />} />
+      <Route path="/dash" element={<Dashboard1 />} />
+    </Routes>
     
   );
 }
